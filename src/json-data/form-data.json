@@ -1,0 +1,179 @@
+{
+  "id": "GUID",
+  "name": "",
+  "description": "",
+  "panel": "vertical",
+  "caption": "show-on-top",
+  "page_sets": [
+    {
+      "id": "GUID",
+      "serial": 1,
+      "name": "Root_Page_Set",
+      "heading": "Root Page Set Component",
+      "description": "",
+      "panel": "vertical",
+      "caption": "show-on-top",
+      "pages": [
+        {
+          "id": "GUID",
+          "serial": 1,
+          "name": "RootPage",
+          "heading": "Starting From Here For Root Page",
+          "description": "",
+          "panel": "vertical",
+          "caption": "show-on-top",
+          "sections": [
+            {
+              "id": "GUID",
+              "serial": 1,
+              "name": "section_1",
+              "heading": "section part 1",
+              "description": "",
+              "components": [
+                {
+                  "id": "GUID",
+                  "serial": 1,
+                  "name": "name",
+                  "label": "Name",
+                  "description": "",
+                  "type": "text",
+                  "options": [],
+                  "validation": {
+                    "mandatory": true,
+                    "min_length": 3,
+                    "max_length": 20
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 2,
+                  "name": "email",
+                  "label": "Email ID",
+                  "description": "",
+                  "type": "email",
+                  "options": [],
+                  "validation": {
+                    "madatory": true
+                  },
+                  "source": {
+                    "type": "API",
+                    "url": ""
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 3,
+                  "name": "password",
+                  "label": "Password",
+                  "description": "",
+                  "type": "password",
+                  "options": [],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 4,
+                  "name": "number",
+                  "label": "Ph Number",
+                  "description": "",
+                  "type": "number",
+                  "options": [],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 5,
+                  "name": "address",
+                  "label": "Address",
+                  "description": "",
+                  "type": "textarea",
+                  "options": [],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 6,
+                  "name": "select",
+                  "label": "Select Any One",
+                  "description": "",
+                  "type": "select",
+                  "options": [
+                    { "key": "Select An Option" },
+                    { "key": "Student", "value": "student" },
+                    { "key": "Employee", "value": "employee" },
+                    { "key": "Self Epmloyee", "value": "self employee" }
+                  ],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 7,
+                  "name": "checkbox",
+                  "label": "Check The Details : ",
+                  "description": "",
+                  "type": "checkbox",
+                  "options": [
+                    {
+                      "key": "All Information Are Currect !",
+                      "value": "check box checked"
+                    }
+                  ],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                },
+                {
+                  "id": "GUID",
+                  "serial": 8,
+                  "name": "radio",
+                  "label": "Radio Options",
+                  "description": "",
+                  "type": "radio",
+                  "options": [
+                    { "key": "Male", "value": "male" },
+                    { "key": "Female", "value": "female" }
+                  ],
+                  "validation": {
+                    "mandatory": true
+                  },
+                  "source": {
+                    "type": "MASTER",
+                    "var": "{masterData.ageRange}"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

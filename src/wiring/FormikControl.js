@@ -6,6 +6,7 @@ import SelectDropDown from "../components/SelectDropDown";
 import TextArea from "../components/TextArea";
 
 const FormikControl = (props) => {
+  console.log("form control ", props);
   const { control, ...rest } = props;
   switch (control) {
     case "input":
