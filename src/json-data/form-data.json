@@ -37,7 +37,7 @@
                   "label": "Name",
                   "description": "",
                   "type": "text",
-                  "options": [],
+                  "control": "input",
                   "validation": {
                     "mandatory": true,
                     "min_length": 3,
@@ -50,8 +50,8 @@
                   "name": "email",
                   "label": "Email ID",
                   "description": "",
+                  "control": "input",
                   "type": "email",
-                  "options": [],
                   "validation": {
                     "madatory": true
                   },
@@ -66,8 +66,8 @@
                   "name": "password",
                   "label": "Password",
                   "description": "",
+                  "control": "input",
                   "type": "password",
-                  "options": [],
                   "validation": {
                     "mandatory": true
                   },
@@ -82,8 +82,8 @@
                   "name": "number",
                   "label": "Ph Number",
                   "description": "",
+                  "control": "input",
                   "type": "number",
-                  "options": [],
                   "validation": {
                     "mandatory": true
                   },
@@ -98,8 +98,8 @@
                   "name": "address",
                   "label": "Address",
                   "description": "",
+                  "control": "textarea",
                   "type": "textarea",
-                  "options": [],
                   "validation": {
                     "mandatory": true
                   },
@@ -114,6 +114,7 @@
                   "name": "select",
                   "label": "Select Any One",
                   "description": "",
+                  "control": "select",
                   "type": "select",
                   "options": [
                     { "key": "Select An Option" },
@@ -131,16 +132,15 @@
                 },
                 {
                   "id": "GUID",
-                  "serial": 7,
-                  "name": "checkbox",
-                  "label": "Check The Details : ",
+                  "serial": 8,
+                  "name": "radio",
+                  "label": "Radio Options",
                   "description": "",
-                  "type": "checkbox",
+                  "control": "radio",
+                  "type": "",
                   "options": [
-                    {
-                      "key": "All Information Are Currect !",
-                      "value": "check box checked"
-                    }
+                    { "key": "Male", "value": "male" },
+                    { "key": "Female", "value": "female" }
                   ],
                   "validation": {
                     "mandatory": true
@@ -152,14 +152,17 @@
                 },
                 {
                   "id": "GUID",
-                  "serial": 8,
-                  "name": "radio",
-                  "label": "Radio Options",
+                  "serial": 7,
+                  "name": "checkbox",
+                  "label": "Check The Details : ",
                   "description": "",
-                  "type": "radio",
+                  "control": "checkbox",
+                  "type": "checkbox",
                   "options": [
-                    { "key": "Male", "value": "male" },
-                    { "key": "Female", "value": "female" }
+                    {
+                      "key": "All Information Are Currect !",
+                      "value": "check box checked"
+                    }
                   ],
                   "validation": {
                     "mandatory": true

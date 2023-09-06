@@ -6,7 +6,7 @@ import SelectDropDown from "../components/SelectDropDown";
 import TextArea from "../components/TextArea";
 
 const FormikControl = (props) => {
-  console.log("form control ", props);
+  // console.log("form control ", props);
   const { control, ...rest } = props;
   switch (control) {
     case "input":
@@ -21,7 +21,6 @@ const FormikControl = (props) => {
       return <CheckBox {...rest} />;
     case "date":
       return <DatePicker {...rest} />;
-
     default:
       return null;
   }
